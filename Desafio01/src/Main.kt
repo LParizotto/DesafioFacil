@@ -8,14 +8,14 @@ fun main() {
         val soma = conta.split("+")
         println((soma[0].toInt() + soma[1].toInt()))
     }else if (conta.contains("-")) {
-        val menos = conta.split("+")
+        val menos = conta.split("-")
         println((menos[0].toInt() - menos[1].toInt()))
     }else if (conta.contains("*")) {
-        val vezes = conta.split("+")
-        println((vezes[0].toInt() + vezes[1].toInt()))
+        val vezes = conta.split("*")
+        println((vezes[0].toInt() * vezes[1].toInt()))
 
     }else if (conta.contains("/")) {
-        val divisao = conta.split("+")
-        println((divisao[0].toInt() + divisao[1].toInt()))
+        val divisao = conta.split("/")
+        println((divisao[0].toInt() / divisao[1].toInt()))
     }
 }
